@@ -31,10 +31,7 @@ const Statistics = () => {
             </ResponsiveContainer>
             </div>
             
-     
-            
-     
-       
+
     );
     
 };

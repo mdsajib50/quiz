@@ -8,8 +8,8 @@ const Home = () => {
 
     return (
         <div>
-            <div className='w-full bg-green-300 p-10 text-start text-lg mb-4'>
-            <h1><span className='font-semibold text-rose-700'>Quiz-Play</span> is a quiz site.<br></br>
+            <div className='w-92% bg-green-300 p-10 text-start text-lg mb-4 rounded-r-full '>
+            <h1 className='text-center'><span className='font-semibold text-rose-700 '>Quiz-Play</span> is a quiz site.<br></br>
                  You can play quizzes on different topics.<br></br>
                   You play quizzes to develop your knowledge.<br></br>
                  Enjoy your learning.

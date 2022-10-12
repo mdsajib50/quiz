@@ -5,28 +5,25 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 
 const QuizDetails = ({questioned}) => {
     const {correctAnswer,question,id,options}=questioned
-    console.log(question)
-
+    
     let myString = question.split('</p>').join('')
     let myQuestion = myString.split('<p>').join('');
-    console.log(myQuestion)
+    
     const [formValue, setFormValue]= useState([])
     let answers =[...formValue]
    
     const notify = () => toast
-
     
-    
+  
       
    const handelFormValve = e =>{
-       
+        
        const value = e.target.value
        if(value === correctAnswer){
-           
-        toast("Answer is correct!");
+        
+        toast("Answer is correct!,");
     
        }else{
-           
         toast("Answer is wrong!");
        }
        setFormValue([
@@ -50,7 +47,7 @@ const QuizDetails = ({questioned}) => {
             <div className='m-2 '>
             <form className='bg-neutral-300 p-3'>
                 <div className='border-2 rounded p-2 m-2'>
-                <input type="radio" id={id} name={answers} value={options[0]} onChange={handelFormValve} onClick={notify}/>
+                <input type="radio" id={id} name={answers} value={options[0]} onChange={handelFormValve} onClick={notify} />
                 <label for={id}>{options[0]}</label>
                 </div>
                 <div className='border-2 rounded p-2 m-2'>
