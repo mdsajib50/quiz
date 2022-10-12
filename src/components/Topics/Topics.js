@@ -7,7 +7,7 @@ const Topics = () => {
     const {data}= quizzes
 
     return (
-        <div className='flex'>
+        <div className='sm:grid grid-cols-1 gap-1 lg:grid grid-cols-2'>
            {
                 data.map(topic =>{
                     return <Topic key={topic.id} topic={topic}></Topic>

@@ -7,6 +7,7 @@ import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import Quiz from './components/Quiz/Quiz';
 import Error from './components/Error/Error';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const router = createBrowserRouter([
@@ -49,6 +50,7 @@ function App() {
     <div className="App">
       
       <RouterProvider router={router}></RouterProvider>
+      <Footer></Footer>
     </div>
   );
 }
