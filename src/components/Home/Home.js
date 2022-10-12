@@ -15,7 +15,7 @@ const Home = () => {
                  Enjoy your learning.
             </h1>
             </div>
-            <div className='sm:grid grid-cols-1 gap-x-2 w-full lg:grid grid-cols-2 gap-2 w-1/2'>
+            <div className='lg:grid grid-cols-2 gap-2 w-1/2sm:grid gap-x-2 w-full'>
                 
                 {
                     data.map(topic =>{

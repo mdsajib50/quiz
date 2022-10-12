@@ -1,6 +1,6 @@
 # Site: Quiz-Play
 
-# Link: 
+# Link: https://stalwart-tartufo-53ee6f.netlify.app/
 
 * This site builds by React, React-Router, Tailwind CSS, and essential plugins.
 
