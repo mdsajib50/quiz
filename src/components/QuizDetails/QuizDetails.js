@@ -5,27 +5,21 @@ const QuizDetails = ({questioned}) => {
     const {correctAnswer,question,id,options}=questioned
     const [formValue, setFormValue]= useState([])
     let answers =[...formValue]
-    console.log(answers)
-    console.log(correctAnswer)
-    let count  
+   
     const notify = () => toast
 
-    const {isDisabled, setIsDisabled} = useState(true)
-    const handleClick = () => {
-        if(answers.length === '0'){
-            setIsDisabled(!isDisabled)
-        }
-      };
+    
+    
       
    const handelFormValve = e =>{
-       count = 0
+       
        const value = e.target.value
        if(value === correctAnswer){
-           count++
+           
         toast("Answer is correct!");
     
        }else{
-           count++
+           
         toast("Answer is wrong!");
        }
        setFormValue([
